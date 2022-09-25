@@ -168,7 +168,6 @@ img {
   justify-content: space-between;
 }
 .benefits .item {
-  /* 270px баранья я башка, не проверил))) */
   width: calc((100% - 90px) / 4);
 }
 .benefits .item + .item {
@@ -193,6 +192,13 @@ img {
 .activities-photo {
   display: flex;
 }
+/* scale extra effect for activities illustration */
+.activities .photo {
+  transition: all 0.9s;
+}
+.activities .photo:hover {
+  transform: scale(1.15);
+}
 .photo + .photo {
   margin-left: 30px;
 }
@@ -213,12 +219,10 @@ img {
   margin: 0 auto;
   font-size: 16px;
 }
-/* чи потрібні тут додаткові діви для картинки та блоку заголовку+текст?*/
 .team-content {
   text-align: center;
   line-height: 1.17;
   padding: 30px 5px;
-  /* бокові падінги щоб не "прижимався" текст до границь картки при заміні*/
 }
 .team {
   background-color: var(--second-background-color);
@@ -227,6 +231,13 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--background-color);
+}
+/* scale extra effect for team member */
+.team.card {
+  transition: all 0.9s;
+}
+.team.card:hover {
+  transform: scale(1.2);
 }
 /* Footer */
 footer {
