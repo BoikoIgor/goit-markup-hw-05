@@ -128,18 +128,24 @@ img {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-/* -------ПОКА НЕ РАБОТАЕТ----- */
-.mail.link::before {
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* ------icons------- */
+.mail::before {
+  display: inline-block;
   content: '';
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-color: red;
   background-image: url(../images/svg/envelope.svg);
+  background-size: contain;
 }
-.site-nav .link.current {
+/* ------HOVER DONT WORK for SVG------- */
+/* .mail:hover::before,
+.mail:focus::before {
   color: var(--accent-color);
-}
+} */
 /* Main */
 /* ---------------------hero------------------------ */
 .hero {
@@ -196,9 +202,33 @@ img {
 }
 .benefits .item {
   width: calc((100% - 90px) / 4);
+  /* background-color: var(--second-background-color); */
 }
 .benefits .item + .item {
   margin-left: 30px;
+}
+.benefits .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--second-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-details::before {
+  background-image: url(../images/icons-png/details.png);
+}
+.icon-punctuality::before {
+  background-image: url(../images/icons-png/punctuality.png);
+}
+.icon-planning::before {
+  background-image: url(../images/icons-png/planning.png);
+}
+.icon-technology::before {
+  background-image: url(../images/icons-png/technology.png);
 }
 .benefits .title {
   margin-top: 0;
@@ -250,6 +280,32 @@ img {
   margin: 0 auto;
   font-size: 16px;
   letter-spacing: 0.03em;
+}
+.icons.list {
+  margin-top: 16px;
+  padding-left: 27px;
+  padding-right: 27px;
+  justify-content: space-between;
+}
+.icon.item {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--accent-color);
+}
+.icon.item .instagram {
+  background-color: var(--title-text-color);
+  background-image: url(../images/social-logo/instagram.svg);
+}
+.twitter {
+}
+.facebook {
+}
+.linkedin {
 }
 .team-content {
   text-align: center;
