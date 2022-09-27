@@ -1,11 +1,12 @@
-/* second text color, headings #212121 */
-/* accents #2196F3, #FFFFFF */
+/* text colors #757575, headings #212121 */
+/* accents #2196F3, #FFFFFF, #188CE8 */
 /* backgrounds #FFFFFF, #F5F4FA, #2F303A */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --second-accent-color: #ffffff;
+  --third-accent-color: #188ce8;
   --background-color: #ffffff;
   --second-background-color: #f5f4fa;
   --third-background-color: #2f303a;
@@ -13,8 +14,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  /* line-height: 1.7;
+  letter-spacing: 0.03em; */
   background-color: var(--background-color);
   color: var(--primary-text-color);
 }
@@ -42,6 +43,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .visually-hidden {
@@ -74,7 +76,8 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
 }
@@ -96,9 +99,8 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title-text-color);
@@ -121,7 +123,6 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -132,7 +133,7 @@ img {
   color: var(--accent-color);
 }
 /* Main */
-/* --------------------------hero--------------------------- */
+/* ---------------------hero------------------------ */
 .hero {
   background-color: var(--third-background-color);
 }
@@ -168,8 +169,10 @@ img {
   color: var(--second-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-/* --------------------------Benefits------------------------- */
+.hero-button:hover {
+  background: var(--third-accent-color);
+}
+/* -----------------Benefits------------------ */
 .benefits.list {
   display: flex;
   justify-content: space-between;
@@ -186,13 +189,16 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 .benefits .text {
   margin: 0;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-/* -----------------------What we do / activities section--------------- */
+/* ---------What we do / activities section------- */
 .activities.section {
   padding-top: 0;
 }
@@ -209,7 +215,7 @@ img {
 .photo + .photo {
   margin-left: 30px;
 }
-/* -------------------------------Our team-------------------------------- */
+/* ----------------Our team--------------------- */
 .team .list {
   display: flex;
 }
@@ -220,11 +226,13 @@ img {
   margin: 0 auto 10px;
   font-weight: 500;
   font-size: 16px;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team .text {
   margin: 0 auto;
   font-size: 16px;
+  letter-spacing: 0.03em;
 }
 .team-content {
   text-align: center;
@@ -261,6 +269,8 @@ footer {
   margin-top: 20px;
   text-decoration: none;
   font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--second-accent-color);
 }
 .address .link {
@@ -273,7 +283,7 @@ footer {
 .address .address:focus {
   color: var(--accent-color);
 }
-/* -------------------------------Portfolio page--------------------------- */
+/*------------------Portfolio page-------------- */
 /* -----------Filter buttons---------- */
 .list.filter .item {
   display: inline-block;
@@ -321,6 +331,7 @@ footer {
   text-align: left;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .portfolio .link {
