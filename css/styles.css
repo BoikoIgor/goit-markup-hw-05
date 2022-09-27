@@ -1,6 +1,7 @@
 /* text colors #757575, headings #212121 */
 /* accents #2196F3, #FFFFFF, #188CE8 */
-/* backgrounds #FFFFFF, #F5F4FA, #2F303A */
+/* backgrounds #FFFFFF, #F5F4FA, #2F303A, #C4C4C4;
+ */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -10,12 +11,11 @@
   --background-color: #ffffff;
   --second-background-color: #f5f4fa;
   --third-background-color: #2f303a;
+  --background-hero-color: #c4c4c4;
 }
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  /* line-height: 1.7;
-  letter-spacing: 0.03em; */
   background-color: var(--background-color);
   color: var(--primary-text-color);
 }
@@ -47,7 +47,6 @@ body {
   color: var(--title-text-color);
 }
 .visually-hidden {
-  /* display: none; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -63,7 +62,7 @@ img {
   display: block;
   max-width: 100%;
 }
-/* ------------------------------Page header------------------------ */
+/* -----------Page header----------------- */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -129,13 +128,31 @@ img {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+/* -------ПОКА НЕ РАБОТАЕТ----- */
+.mail.link::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-color: red;
+  background-image: url(../images/svg/envelope.svg);
+}
 .site-nav .link.current {
   color: var(--accent-color);
 }
 /* Main */
 /* ---------------------hero------------------------ */
 .hero {
-  background-color: var(--third-background-color);
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: var(--background-hero-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/bg-hero.jpg);
+  /* background-image: url(../images/bg-hero-overlay.png), url(../images/bg-hero.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background: var(--background-hero-color) url(../images/bg-hero.jpg) no-repeat center; */
 }
 .hero .container {
   max-width: 696px;
