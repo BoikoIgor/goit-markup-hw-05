@@ -464,6 +464,6 @@ footer .social.link:hover {
   border-top: none;
 }
 /* на перспективу, для ефектів картинки?: */
-/* .card-thumb {
+.card-thumb {
   overflow: hidden;
-} */
+}
