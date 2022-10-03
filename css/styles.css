@@ -106,15 +106,23 @@ img {
   text-decoration: none;
   color: var(--title-text-color);
 }
+.contacts .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .site-nav .link:hover,
-.site-nav .link:focus,
-.contacts .link:hover,
-.contacts .link:focus,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.contacts .group:hover,
+.contacts .item:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 .envelope:hover,
 .envelope:focus,
 .phone:hover,
 .phone:focus {
-  color: var(--accent-color);
   fill: var(--accent-color);
 }
 /* ------contacts list------ */
@@ -284,8 +292,8 @@ img {
 .social .center {
   margin: 12px;
 }
-.social:hover,
-.social:focus {
+.social.link:hover,
+.social.link:focus {
   background-color: var(--accent-color);
   fill: var(--second-accent-color);
 }
@@ -359,9 +367,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
-.address .link:focus,
-.address .address:hover,
-.address .address:focus {
+.address .link:focus {
   color: var(--accent-color);
 }
 
