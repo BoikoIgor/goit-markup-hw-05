@@ -111,13 +111,10 @@ img {
   padding-bottom: 32px;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-color);
-}
-.contacts .group:hover,
-.contacts .item:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
 }
 .envelope:hover,
 .envelope:focus,
@@ -146,17 +143,14 @@ img {
   color: var(--accent-color);
 }
 /* ------icons------ */
-/* .envelope:hover,
-.envelope:focus,
-.phone:hover,
-.phone:focus {
-  fill: var(--accent-color);
-} */
 .envelope,
 .phone {
   fill: var(--primary-text-color);
   margin-right: 10px;
+  cursor: pointer;
+  vertical-align: middle;
 }
+
 /* Main */
 /* ---------------------hero------------------------ */
 .hero {
