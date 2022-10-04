@@ -120,7 +120,7 @@ img {
 .envelope:focus,
 .phone:hover,
 .phone:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 /* ------contacts list------ */
 .contacts {
