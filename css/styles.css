@@ -106,28 +106,23 @@ img {
   text-decoration: none;
   color: var(--title-text-color);
 }
-.contacts .item {
+.contacts-item {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-item .link:hover,
+.contacts-item .link:focus {
   color: var(--accent-color);
 }
-.envelope:hover,
-.envelope:focus,
-.phone:hover,
-.phone:focus {
-  fill: currentColor;
-}
+
 /* ------contacts list------ */
-.contacts {
+.contacts.list {
   display: flex;
   margin-left: auto;
 }
-.contacts .item + .item {
+.contacts-item + .contacts-item {
   margin-left: 30px;
 }
 .contacts .link {
@@ -150,7 +145,12 @@ img {
   cursor: pointer;
   vertical-align: middle;
 }
-
+.envelope:hover,
+.envelope:focus,
+.phone:hover,
+.phone:focus {
+  fill: var(--accent-color);
+}
 /* Main */
 /* ---------------------hero------------------------ */
 .hero {
