@@ -340,6 +340,8 @@ footer {
 }
 .footer .address {
   margin-top: 20px;
+}
+.footer .address.link {
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
@@ -347,7 +349,8 @@ footer {
   color: var(--second-accent-color);
 }
 .address .link {
-  text-decoration: inherit;
+  text-decoration: none;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
