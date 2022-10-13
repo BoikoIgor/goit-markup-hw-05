@@ -50,7 +50,12 @@
       <section class="hero centered">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button data-modal-close>&#215</button>
+          </div>
         </div>
       </section>
       <!-- benefits section -->
@@ -101,11 +106,20 @@
       <section class="activities section">
         <div class="container centered">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <div class="activities-photo">
-            <img class="activities photo" src="./images/img1.jpg" alt="Десктопні додатки на фотографії" width="370" />
-            <img class="activities photo" src="./images/img2.jpg" alt="Мобільні додатки на фотографії" width="370" />
-            <img class="activities photo" src="./images/img3.jpg" alt="Дизайнерські рішення на фотографії" width="370" />
-          </div>
+          <ul class="activities-photo list">
+            <li class="activities-photo item">
+              <img class="activities photo" src="./images/img1.jpg" alt="Десктопні додатки на фотографії" width="370" />
+              <p class="activities-overlay text">Десктопні додатки</p>
+            </li>
+            <li class="activities-photo item">
+              <img class="activities photo" src="./images/img2.jpg" alt="Мобільні додатки на фотографії" width="370" />
+              <p class="activities-overlay text">Мобільні додатки</p>
+            </li>
+            <li class="activities-photo item">
+              <img class="activities photo" src="./images/img3.jpg" alt="Дизайнерські рішення на фотографії" width="370" />
+              <p class="activities-overlay text">Дизайнерські рішення</p>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- our team section -->
@@ -375,5 +389,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
