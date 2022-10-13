@@ -97,6 +97,7 @@ img {
   margin-right: 50px;
 }
 .site-nav .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -119,6 +120,7 @@ img {
   margin-left: 30px;
 }
 .contacts.link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -150,7 +152,6 @@ img {
   margin: 0 auto;
   background-color: var(--background-hero-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/bg-hero.jpg);
-  /* background-image: url(../images/bg-hero-overlay.png), url(../images/bg-hero.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -171,6 +172,7 @@ img {
   color: var(--second-accent-color);
 }
 .hero-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   min-width: 216px;
   min-height: 50px;
@@ -188,7 +190,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover {
-  background: var(--third-accent-color);
+  background-color: var(--third-accent-color);
 }
 /* ---------------Benefits------------- */
 .benefits.list {
@@ -234,15 +236,15 @@ img {
 .activities-photo {
   display: flex;
 }
+.photo + .photo {
+  margin-left: 30px;
+}
 /* scale extra effect for activities illustration */
 .activities .photo {
-  transition: all 0.9s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .activities .photo:hover {
   transform: scale(1.15);
-}
-.photo + .photo {
-  margin-left: 30px;
 }
 /* ----------------Our team--------------------- */
 .team .list {
@@ -270,6 +272,7 @@ img {
   justify-content: space-between;
 }
 .social {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   width: 44px;
   height: 44px;
@@ -299,7 +302,7 @@ img {
 }
 /* scale extra effect for team member */
 .team.card {
-  transition: all 0.9s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team.card:hover {
   transform: scale(1.2);
@@ -312,6 +315,7 @@ img {
   margin-left: 30px;
 }
 .icons.link {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,6 +357,7 @@ footer {
   color: var(--second-accent-color);
 }
 .address .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -378,6 +383,7 @@ footer .icons.list {
   justify-content: space-between;
 }
 footer .social.link {
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: var(--second-accent-color);
@@ -400,6 +406,7 @@ footer .social.link:hover {
   margin-left: 8px;
 }
 .list .filter {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 73px;
   min-height: 38px;
   padding: 6px 22px;
@@ -448,6 +455,7 @@ footer .social.link:hover {
   flex-wrap: wrap;
 }
 .portfolio > .item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
